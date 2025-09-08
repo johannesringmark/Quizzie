@@ -1,0 +1,33 @@
+{
+  "originHash" : "5aeafa180225a05c5199fb3879bb9f2b9d33c0c0778f601570309ce67ceecab3",
+  "pins" : [
+    {
+      "identity" : "swiftwhisper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exPHAT/SwiftWhisper.git",
+      "state" : {
+        "revision" : "a192004db08de7c6eaa169eede77f1625e7d23fb",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "tensorflowlitec",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kewlbear/TensorFlowLiteC.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d4cb1f268ce037754cda9a291e6b31091e1b9912"
+      }
+    },
+    {
+      "identity" : "tensorflowliteswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kewlbear/TensorFlowLiteSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bb9bd9c7c86e882f17aaf8bac35e96c77264eee2"
+      }
+    }
+  ],
+  "version" : 3
+}

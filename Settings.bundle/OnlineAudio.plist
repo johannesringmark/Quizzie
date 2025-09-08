@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Generate &amp; Download Audio</string>
+			<key>Key</key>
+			<string>gen_audio_enabled</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>FooterText</key>
+			<string>When enabled, the app may generate MP3 files and store them locally.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Provider</string>
+			<key>Key</key>
+			<string>api_provider</string>
+			<key>DefaultValue</key>
+			<string>elevenlabs</string>
+			<key>Titles</key>
+			<array>
+				<string>ElevenLabs</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>elevenlabs</string>
+			</array>
+			<key>FooterText</key>
+			<string>Select the provider to use for generation.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>API Key</string>
+			<key>Key</key>
+			<string>api_key</string>
+			<key>IsSecure</key>
+			<true/>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>FooterText</key>
+			<string>Your ElevenLabs API key.</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>OnlineAudio</string>
+</dict>
+</plist>

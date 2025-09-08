@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Offline Mode</string>
+			<key>Key</key>
+			<string>offline_enabled</string>
+			<key>DefaultValue</key>
+			<true/>
+			<key>FooterText</key>
+			<string>When &apos;Offline Mode&apos; is ON, the app won’t call external APIs.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>TTS Provider</string>
+			<key>File</key>
+			<string>OnlineAudio</string>
+			<key>FooterText</key>
+			<string>Configure generation &amp; API settings (used only when Offline is OFF).</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

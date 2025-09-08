@@ -6,6 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7C1923D32E917BFB00F15D00 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C1923D22E917BFB00F15D00 /* Settings.bundle */; };
+		7C9F2C382E676A6A00B365AB /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9F2C372E676A6A00B365AB /* SwiftWhisper */; };
+		7C9F2C3C2E680F1000B365AB /* ggml-tiny.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C3B2E680F1000B365AB /* ggml-tiny.bin */; };
+		7C9F2C422E68107D00B365AB /* ggml-tiny-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C412E68107D00B365AB /* ggml-tiny-encoder.mlmodelc */; };
+		7C9F2C462E68BABA00B365AB /* ggml-small.en-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C452E68BABA00B365AB /* ggml-small.en-encoder.mlmodelc */; };
+		7C9F2C482E6AECDB00B365AB /* ggml-small.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C472E6AECDB00B365AB /* ggml-small.en.bin */; };
+		7C9F2C502E6F42E300B365AB /* ggml-base.en-q5_1.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C4F2E6F42E300B365AB /* ggml-base.en-q5_1.bin */; };
+		7C9F2C522E6F431800B365AB /* ggml-base.en-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C512E6F431800B365AB /* ggml-base.en-encoder.mlmodelc */; };
+		7C9F2C542E6F441C00B365AB /* ggml-medium.en-q5_0.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C532E6F441C00B365AB /* ggml-medium.en-q5_0.bin */; };
+		7C9F2C562E6F444900B365AB /* ggml-medium.en-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C552E6F444900B365AB /* ggml-medium.en-encoder.mlmodelc */; };
+		7C9F2C772E7093F600B365AB /* TensorFlowLiteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9F2C762E7093F600B365AB /* TensorFlowLiteSwift */; };
+		7C9F2C7A2E709D0C00B365AB /* model_2.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C792E709D0C00B365AB /* model_2.tflite */; };
+		7C9F2C7B2E709D0C00B365AB /* model_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F2C782E709D0C00B365AB /* model_1.tflite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7C9F2BFB2E64BDE100B365AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C1923D22E917BFB00F15D00 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7C1923D62E92648100F15D00 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .gitignore; sourceTree = "<group>"; };
 		7C9F2BED2E64BDDD00B365AB /* Quizzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9F2BFA2E64BDE100B365AB /* QuizzieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9F2C042E64BDE100B365AB /* QuizzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9F2C3B2E680F1000B365AB /* ggml-tiny.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-tiny.bin"; sourceTree = "<group>"; };
+		7C9F2C412E68107D00B365AB /* ggml-tiny-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-tiny-encoder.mlmodelc"; sourceTree = "<group>"; };
+		7C9F2C452E68BABA00B365AB /* ggml-small.en-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-small.en-encoder.mlmodelc"; sourceTree = "<group>"; };
+		7C9F2C472E6AECDB00B365AB /* ggml-small.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-small.en.bin"; sourceTree = "<group>"; };
+		7C9F2C4F2E6F42E300B365AB /* ggml-base.en-q5_1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-base.en-q5_1.bin"; sourceTree = "<group>"; };
+		7C9F2C512E6F431800B365AB /* ggml-base.en-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-base.en-encoder.mlmodelc"; sourceTree = "<group>"; };
+		7C9F2C532E6F441C00B365AB /* ggml-medium.en-q5_0.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-medium.en-q5_0.bin"; sourceTree = "<group>"; };
+		7C9F2C552E6F444900B365AB /* ggml-medium.en-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-medium.en-encoder.mlmodelc"; sourceTree = "<group>"; };
+		7C9F2C782E709D0C00B365AB /* model_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_1.tflite; sourceTree = "<group>"; };
+		7C9F2C792E709D0C00B365AB /* model_2.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_2.tflite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9F2C382E676A6A00B365AB /* SwiftWhisper in Frameworks */,
+				7C9F2C772E7093F600B365AB /* TensorFlowLiteSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +118,22 @@
 		7C9F2BE42E64BDDD00B365AB = {
 			isa = PBXGroup;
 			children = (
+				7C1923D62E92648100F15D00 /* .gitignore */,
+				7C1923D22E917BFB00F15D00 /* Settings.bundle */,
+				7C9F2C782E709D0C00B365AB /* model_1.tflite */,
+				7C9F2C792E709D0C00B365AB /* model_2.tflite */,
+				7C9F2C552E6F444900B365AB /* ggml-medium.en-encoder.mlmodelc */,
+				7C9F2C532E6F441C00B365AB /* ggml-medium.en-q5_0.bin */,
+				7C9F2C512E6F431800B365AB /* ggml-base.en-encoder.mlmodelc */,
+				7C9F2C4F2E6F42E300B365AB /* ggml-base.en-q5_1.bin */,
+				7C9F2C472E6AECDB00B365AB /* ggml-small.en.bin */,
+				7C9F2C452E68BABA00B365AB /* ggml-small.en-encoder.mlmodelc */,
+				7C9F2C412E68107D00B365AB /* ggml-tiny-encoder.mlmodelc */,
+				7C9F2C3B2E680F1000B365AB /* ggml-tiny.bin */,
 				7C9F2BEF2E64BDDD00B365AB /* Quizzie */,
 				7C9F2BFD2E64BDE100B365AB /* QuizzieTests */,
 				7C9F2C072E64BDE100B365AB /* QuizzieUITests */,
+				7C9F2C362E676A6A00B365AB /* Frameworks */,
 				7C9F2BEE2E64BDDD00B365AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +146,13 @@
 				7C9F2C042E64BDE100B365AB /* QuizzieUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7C9F2C362E676A6A00B365AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +175,8 @@
 			);
 			name = Quizzie;
 			packageProductDependencies = (
+				7C9F2C372E676A6A00B365AB /* SwiftWhisper */,
+				7C9F2C762E7093F600B365AB /* TensorFlowLiteSwift */,
 			);
 			productName = Quizzie;
 			productReference = 7C9F2BED2E64BDDD00B365AB /* Quizzie.app */;
@@ -183,6 +235,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
@@ -208,6 +263,10 @@
 			);
 			mainGroup = 7C9F2BE42E64BDDD00B365AB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7C9F2C2D2E67614B00B365AB /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				7C9F2C592E708F7C00B365AB /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7C9F2BEE2E64BDDD00B365AB /* Products */;
 			projectDirPath = "";
@@ -225,6 +284,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9F2C562E6F444900B365AB /* ggml-medium.en-encoder.mlmodelc in Resources */,
+				7C9F2C462E68BABA00B365AB /* ggml-small.en-encoder.mlmodelc in Resources */,
+				7C9F2C502E6F42E300B365AB /* ggml-base.en-q5_1.bin in Resources */,
+				7C9F2C482E6AECDB00B365AB /* ggml-small.en.bin in Resources */,
+				7C9F2C7A2E709D0C00B365AB /* model_2.tflite in Resources */,
+				7C9F2C7B2E709D0C00B365AB /* model_1.tflite in Resources */,
+				7C9F2C3C2E680F1000B365AB /* ggml-tiny.bin in Resources */,
+				7C9F2C422E68107D00B365AB /* ggml-tiny-encoder.mlmodelc in Resources */,
+				7C9F2C542E6F441C00B365AB /* ggml-medium.en-q5_0.bin in Resources */,
+				7C1923D32E917BFB00F15D00 /* Settings.bundle in Resources */,
+				7C9F2C522E6F431800B365AB /* ggml-base.en-encoder.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +641,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C9F2C2D2E67614B00B365AB /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		7C9F2C592E708F7C00B365AB /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/TensorFlowLiteSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C9F2C372E676A6A00B365AB /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9F2C2D2E67614B00B365AB /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		7C9F2C762E7093F600B365AB /* TensorFlowLiteSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9F2C592E708F7C00B365AB /* XCRemoteSwiftPackageReference "TensorFlowLiteSwift" */;
+			productName = TensorFlowLiteSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C9F2BE52E64BDDD00B365AB /* Project object */;
 }
