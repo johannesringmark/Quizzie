@@ -2,7 +2,7 @@ import AVFoundation
 
 final class BlockingPlayer {
     func playBlocking(name: String, ext: String = "mp3") async throws {
-        guard let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory:"Quizzie/Sounds") else {
+        guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
             print("File not found")
             throw NSError(domain: "BlockingPlayer", code: 1,
                           userInfo: [NSLocalizedDescriptionKey: "File not found"])
