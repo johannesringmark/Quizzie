@@ -27,7 +27,7 @@ struct AppSettingsView: View {
     @State private var apiKeySaved: Bool = false
     @State private var revealKey = false
 
-    private var generationEnabled: Bool { !offline && genAudio }
+    private var generationEnabled: Bool { genAudio }
     private var needsApiKey: Bool { generationEnabled && apiProvider == Keys.elevenLabs }
 
     var body: some View {
@@ -38,16 +38,19 @@ struct AppSettingsView: View {
                     .font(.footnote).foregroundStyle(.secondary)
             }
 
-            Section("TSS Provider") {
-                Toggle("Generate & Download Audio", isOn: $genAudio)
-                    .disabled(offline)
+            if !offline{
+                Section("TSS Provider") {
+                    Toggle("Generate & Download Audio", isOn: $genAudio)
+                        .disabled(offline)
 
-                Picker("Provider", selection: $apiProvider) {
-                    Text("ElevenLabs").tag(Keys.elevenLabs)
-                    // Add more providers later…
+                    Picker("Provider", selection: $apiProvider) {
+                        Text("ElevenLabs").tag(Keys.elevenLabs)
+                        // Add more providers later…
+                    }
+                    .disabled(offline)
                 }
-                .disabled(!generationEnabled)
             }
+
 
             if needsApiKey {
                 Section("API Credentials") {
@@ -95,7 +98,7 @@ struct AppSettingsView: View {
     // MARK: - Key handling
 
     private func loadKey() {
-        apiKey = Keychain.load(Keys.apiKeyKC) ?? ""
+        //apiKey = Keychain.load(Keys.apiKeyKC) ?? ""
         apiKeySaved = !apiKey.isEmpty
     }
 
@@ -105,7 +108,7 @@ struct AppSettingsView: View {
                 clearKey()
                 return
             }
-            try Keychain.save(apiKey, for: Keys.apiKeyKC)
+            //try Keychain.save(apiKey, for: Keys.apiKeyKC)
             apiKeySaved = true
         } catch {
             apiKeySaved = false
@@ -138,7 +141,7 @@ struct AppSettingsView: View {
     }
 
     private func clearKey() {
-        Keychain.delete(Keys.apiKeyKC)
+        //Keychain.delete(Keys.apiKeyKC)
         apiKey = ""
         apiKeySaved = false
     }
@@ -146,6 +149,10 @@ struct AppSettingsView: View {
     private func pingStateResetIfNeeded() {
         // If user toggles back to Offline, we keep the key
         // but you can optionally clear transient UI flags here.
-        if !needsApiKey { apiKeySaved = !(Keychain.load(Keys.apiKeyKC) ?? "").isEmpty }
+        //if !needsApiKey { apiKeySaved = !(Keychain.load(Keys.apiKeyKC) ?? "").isEmpty }
     }
+}
+
+#Preview {
+    AppSettingsView()
 }
