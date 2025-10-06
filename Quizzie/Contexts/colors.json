@@ -1,0 +1,22 @@
+
+{
+    "match_on_aliases": ["colors", "color", "colour", "colour"],
+    "custom_intro" : [
+        "we’re about to splash through the color wheel",
+        "we’re hunting greens, blues, and oranges",
+        "we’re mixing tints, tones, and shades until the palette sings"
+    ],
+    "questions":[
+    { "question": "Can you say red?", "expected_answer": "red" },
+    { "question": "Can you say orange?", "expected_answer": "orange" },
+    { "question": "Can you say yellow?", "expected_answer": "yellow" },
+    { "question": "Can you say green?", "expected_answer": "green" },
+    { "question": "Can you say blue?", "expected_answer": "blue" },
+    { "question": "Can you say purple?", "expected_answer": "purple" },
+    { "question": "Can you say pink?", "expected_answer": "pink" },
+    { "question": "Can you say brown?", "expected_answer": "brown" },
+    { "question": "Can you say black?", "expected_answer": "black" },
+    { "question": "Can you say white?", "expected_answer": "white" }
+    ]
+}
+

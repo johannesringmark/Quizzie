@@ -1,0 +1,19 @@
+# Xcode
+DerivedData/
+build/
+**/*.xcuserdatad/
+**/*.xcuserstate
+.DS_Store
+# SwiftPM
+.swiftpm/
+.build/
+# Pods/Carthage (if used)
+Pods/
+Carthage/Build/
+# Large binaries (if you keep them): use LFS instead
+*.mp3
+*.bin
+*.tflite//
+ggml-*
+**/xcuserdata/**
+*.xcuserstate
