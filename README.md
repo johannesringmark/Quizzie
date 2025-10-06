@@ -1,4 +1,4 @@
-# Quizzie
+![Quizzie Banner](assets/banner.png)
 
 Quizzie is a hands-free, voice-only quiz platform designed to help users rehearse and learn a variety of topics using spaced repetition. The primary selling point of Quizzie is its commitment to accessibility and convenience: all interactions are performed through voice, making it ideal for users who want to study or reinforce knowledge while on the move or without using their hands.
 
