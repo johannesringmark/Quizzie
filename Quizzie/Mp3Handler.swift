@@ -146,7 +146,7 @@ final class Mp3Handler {
                 try! await player.playBlocking(name:"now_heres_another_one_1")
                 
                 questionIndex = questionIndex + 1;
-                if (questionIndex > selected_context.questions.count - 1){
+                if (questionIndex >= selected_context.questions.count){
                     print("completed" + selected_context.matchOnAliases[0])
                     try! await player.playBlocking(name:"you_completed_the_1")
                     await speak(selected_context.matchOnAliases[0])
